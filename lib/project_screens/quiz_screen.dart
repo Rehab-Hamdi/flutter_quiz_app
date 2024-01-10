@@ -11,8 +11,8 @@ class QuizScreen extends StatefulWidget {
 }
 
 class _QuizScreenState extends State<QuizScreen> {
-  int current_question_index=0;
-  List<String> userAnswers=[];
+  int current_question_index = 0;
+  List<String> userAnswers = [];
   @override
   Widget build(BuildContext context) {
     final current_quiz_question = questions[current_question_index];
@@ -22,31 +22,40 @@ class _QuizScreenState extends State<QuizScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            current_quiz_question.question,
-            style: TextStyle(
-                color: Colors.red, fontWeight: FontWeight.bold, fontSize: 18),
+          Container(
+            margin: EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(12.0),
+            child: Text(
+              current_quiz_question.question,
+              style: TextStyle(
+                  color: Colors.red, fontWeight: FontWeight.bold, fontSize: 16),
+            ),
           ),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.035,
-          ),
+          // SizedBox(
+          //   height: MediaQuery.of(context).size.height * 0.0,
+          // ),
           SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ...current_quiz_question.shuffleTheAnswer.map((e) {
-                  return AnswerButton(txt: e, onPressedFfunction: (){
-                    userAnswers.add(e);
-                    if(userAnswers.length== questions.length)
-                      {
-                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> ResultScreen(userAnswers: userAnswers,)));
-                      }
-                    else {
-                      setState(() {
-                      current_question_index++;
-                    });
-                    }
-                  });
+                  return AnswerButton(
+                      txt: e,
+                      onPressedFfunction: () {
+                        userAnswers.add(e);
+                        if (userAnswers.length == questions.length) {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ResultScreen(
+                                        userAnswers: userAnswers,
+                                      )));
+                        } else {
+                          setState(() {
+                            current_question_index++;
+                          });
+                        }
+                      });
                 })
               ],
             ),

@@ -6,14 +6,15 @@ class AnswerButton extends StatelessWidget {
   dynamic onPressedFfunction;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
+    return Container(
+      margin: const EdgeInsets.all(8.0) ,
+      padding: const EdgeInsets.all(6.0),
       child: ElevatedButton(
           onPressed:onPressedFfunction,
           style: ElevatedButton.styleFrom(foregroundColor: Colors.blueAccent),
           child: Text(
             txt,
-            style: const TextStyle(color: Colors.black),
+            style: const TextStyle(color: Colors.black,fontSize: 15),
           )),
     );
   }
