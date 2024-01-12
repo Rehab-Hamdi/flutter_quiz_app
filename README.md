@@ -17,6 +17,14 @@ Multiple screens, each presenting a single question along with multiple answer o
 
 The final screen displays a table summarizing the quiz results. The table includes columns for question number, question text, correct answer, and the user's selected answer. This provides a comprehensive overview of the user's performance throughout the quiz.
 
+## Screenshots
+
+![Start Screen](project_images/start_screen.png)
+![Question Screen](project_images/question_screen1.png)
+![Question Screen](project_images/question_screen2.png)
+![Question Screen](project_images/question_screen3.png)
+![Result Screen](project_images/result_screen.png)
+
 ## Features
 
 - **Sequential Question Flow**: Users progress through questions one at a time.
@@ -30,3 +38,5 @@ To run the app locally, ensure you have Flutter installed. Then, clone the repos
 ```bash
 flutter pub get
 flutter run
+
+
