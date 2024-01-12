@@ -27,15 +27,7 @@ The final screen displays a table summarizing the quiz results. The table includ
 
 ### Question Screens
 
-![Question Screen 1](project_images/question_screen1.png)
-
----
-
-![Question Screen 2](project_images/question_screen2.png)
-
----
-
-![Question Screen 3](project_images/question_screen3.png)
+![Question Screen 1](project_images/question_screen1.png) ![Question Screen 2](project_images/question_screen2.png) ![Question Screen 3](project_images/question_screen3.png)
 
 ---
 
