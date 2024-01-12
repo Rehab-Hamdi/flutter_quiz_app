@@ -19,11 +19,26 @@ The final screen displays a table summarizing the quiz results. The table includ
 
 ## Screenshots
 
+### Start Screen
+
 ![Start Screen](project_images/start_screen.png)
-![Question Screen](project_images/question_screen1.png)
-![Question Screen](project_images/question_screen2.png)
-![Question Screen](project_images/question_screen3.png)
+
+---
+
+### Question Screens
+
+![Question Screen 1](project_images/question_screen1.png)
+
+![Question Screen 2](project_images/question_screen2.png)
+
+![Question Screen 3](project_images/question_screen3.png)
+
+---
+
+### Result Screen
+
 ![Result Screen](project_images/result_screen.png)
+
 
 ## Features
 
