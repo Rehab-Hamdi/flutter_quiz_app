@@ -30,3 +30,11 @@ To run the app locally, ensure you have Flutter installed. Then, clone the repos
 ```bash
 flutter pub get
 flutter run
+
+## Screenshots
+
+![Start Screen](images/start_screen.png)
+![Question Screen](images/question_screen1.png)
+![Question Screen](images/question_screen2.png)
+![Result Screen](images/result_screen.png)
+
